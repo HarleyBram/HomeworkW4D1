@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="/style.css">
+    <%random = ["rock", "paper", "scissors"]%>
+  </head>
+  <body>
+    <article1>
+      <p> Welcome to rock, paper, scissors. There will be a randomly generated hand to compete against. Go ahead and pick one!</p>
+    </article1>
+    <nav>
+      <ul>
+        <li><a href="/rock/<%=random.sample%>">Rock</a></li>
+        <li><a href="/paper/<%=random.sample%>">Paper</a></li>
+        <li><a href="/scissors/<%=random.sample%>">Scissors</a></li>
+      </ul>
+
+
+    </nav>
+
+    <%= yield %>
+
+  </body>
+</html>
